@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #854d41;
+}
+#root{
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app input:focus{
+  outline: none;
+}
+
+.app input{
+  font-size: 15px;
+}
+
+.header>input{
+  width: 30%;
+  padding: 18px;
+  border-radius: 20px;
+  border: none;
+}
+
+.task{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task>input{
+  width: 30%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+
+input, select {
+  margin: 5px;
+  padding: 8px;
+  font-size: 15px;
+}
+
+select{
+  border: none;
+  width: 10%;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+select:focus{
+  border-color: #555;
+  outline: none;
+}
+
+.btn{
+  padding: 13px 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: #fff;
+}
+
+
+
+button{
+  margin: 5px;
+}
+
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn2{
+  padding: 13px 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: red;
+  color: #fff;
+}
+
+.title>button{
+  padding: 13px 35px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(81, 148, 75);
+  color: #fff;
+  margin-left: 30px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.disc{
+  width: 50%;
+  height: 20%;
+}
+
+
+/* responsive */
+.app {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn, .btn2 {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.btn2 {
+  background-color: #dc3545; /* Delete button color */
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+@media (min-width: 600px) {
+
+  .list {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .task {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  input[type="text"], select {
+    width: auto;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .btn, .btn2 {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .list {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
